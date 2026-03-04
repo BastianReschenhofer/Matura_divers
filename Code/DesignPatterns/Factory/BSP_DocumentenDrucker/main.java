@@ -1,7 +1,5 @@
 package Code.DesignPatterns.Factory.BSP_DocumentenDrucker;
 
-import javax.sound.sampled.SourceDataLine;
-
 public class main {
     public static void main(String[] args) {
         DocumentFactory factory = new DocumentFactory();
