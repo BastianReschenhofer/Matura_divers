@@ -1,0 +1,26 @@
+Liste aller Lehrer die mehr als 2 Fächer unterrichten
+select L.name, count() as anzFächer
+from Lehrer
+left join Kompetenzen using(LNr)
+left join Fächer using(FNr)
+group by LNr
+having anzFächer > 2;
+
+Fach in dem die 5AHELS die meisten Einheiten gehabt hat
+select f.name, count() as timespent
+from UnterrichtEH
+inner join Klassen using(KNr)
+inner join Fächer using(FNr)
+where k.name = „5AHELS“
+group by FNr
+order by timespent desc
+limit 1;
+
+liste der Top 5 schwersten Fächer
+select F.name, avg(L.note) as notenschnitt
+from Fächer F
+inner join Tests T using(FNr)
+inner join Leistungen L using(TNr)
+group by FNr
+order by notenschnitt desc
+limit 5;
