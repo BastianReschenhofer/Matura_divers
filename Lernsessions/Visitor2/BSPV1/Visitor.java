@@ -1,4 +1,4 @@
-package BSP1;
+package BSPV1;
 
 public interface Visitor<T> {
     public T visit(Literal literal);

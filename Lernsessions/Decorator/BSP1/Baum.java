@@ -1,4 +1,4 @@
-package BSP1;
+package Lernsessions.Decorator.BSP1;
 public abstract class Baum {
 
     private int price;

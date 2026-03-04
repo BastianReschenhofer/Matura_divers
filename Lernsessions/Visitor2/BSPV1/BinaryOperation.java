@@ -1,4 +1,4 @@
-package BSP1;
+package BSPV1;
 
 import java.util.function.BinaryOperator;
 

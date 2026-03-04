@@ -1,4 +1,4 @@
-package BSP1;
+package Lernsessions.Decorator.BSP1;
 public class Lichterkette extends Deko {
 
     public int length;

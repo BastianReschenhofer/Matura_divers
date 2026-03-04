@@ -1,4 +1,4 @@
-package BSP1;
+package BSPV1;
 
 public class Demo {
     
