@@ -1,4 +1,4 @@
-## Einfache bis Mittlere Aufgaben (Basics, JOINs & GROUP BY)
+## Einfache
 
 ### 1. Mitarbeiter und ihre Büros
 **Aufgabe:** Liste alle Mitarbeiter (Vor- und Nachname) mit der Stadt auf, in der sie arbeiten.
@@ -51,7 +51,7 @@ ORDER BY quantityInStock DESC;
 
 ***
 
-## Anspruchsvolle Aufgaben (Komplexe JOINs, HAVING & Logik)
+## Mittel
 
 ### 6. Umsatz pro Verkäufer (Sales Rep)
 **Aufgabe:** Berechne den generierten Umsatz (nicht die Zahlungen) pro Mitarbeiter. Zeige auch Mitarbeiter, die keinen Umsatz gemacht haben (mit `0`).
@@ -117,3 +117,34 @@ SELECT productName
 FROM products
 WHERE productCode NOT IN (SELECT DISTINCT productCode FROM orderdetails);
 ```
+
+
+## Schwierig
+
+
+### 11. Offener Betrag pro Kunde (Der Endgegner)
+**Aufgabe:** Berechne für jeden Kunden den Gesamtbestellwert, den insgesamt bezahlten Betrag und die Differenz (den offenen Betrag). Sortiere das Ergebnis nach dem offenen Betrag absteigend.
+
+
+### 12. Der umsatzstärkste Kunde pro Land
+**Aufgabe:** Zeige für jedes Land genau den einen Kunden an, der (über alle seine Bestellungen hinweg) den höchsten Gesamtumsatz generiert hat.
+
+
+### 13. Manager-Hierarchie (3 Ebenen)
+**Aufgabe:** Erstelle eine Liste mit drei Spalten: Den vollen Namen des Mitarbeiters, den Namen seines direkten Vorgesetzten und den Namen des Chefs seines Vorgesetzten.
+
+
+### 14. Kunden unter dem Durchschnitts-Kreditlimit
+**Aufgabe:** Liste alle Kunden (Name und Kreditlimit) auf, deren `creditLimit` geringer ist als das Durchschnitts-Kreditlimit *aller* Kunden. Kunden mit einem Kreditlimit von 0 sollen ignoriert werden.
+
+### 15. Unterdeckung im Lagerbestand
+**Aufgabe:** Zeige alle Produkte (Name und Bestand), bei denen die Summe der bestellten Menge aus *noch offenen Bestellungen* (`status = 'In Process'`) größer ist als der aktuell verfügbare Lagerbestand (`quantityInStock`).
+
+
+### 16. Umsatz pro Verkäufer (inklusive Nullnummern)
+**Aufgabe:** Berechne den generierten Umsatz (anhand der verkauften Produkte, nicht der Zahlungen) pro Vertriebsmitarbeiter (`jobTitle = 'Sales Rep'`). Verkäufer, die noch gar nichts verkauft haben, sollen zwingend mit `0` in der Liste stehen.
+
+x
+### 17. Leistungsstarke Büros
+**Aufgabe:** Liste die Städte aller Büros auf, deren betreute Kunden in Summe einen Gesamtumsatz von mehr als 200.000$ generiert haben. Sortiere absteigend nach dem generierten Büro-Umsatz.
+ 
