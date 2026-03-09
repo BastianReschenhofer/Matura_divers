@@ -2,7 +2,7 @@ package BSP2;
 
 public class Electronic implements ItemElement {
     private double price;
-    private boolean isFragile; // Ist es zerbrechlich?
+    private boolean isFragile; 
 
     public Electronic(double price, boolean isFragile) {
         this.price = price;
