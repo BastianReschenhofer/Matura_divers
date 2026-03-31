@@ -27,6 +27,16 @@ public class Fahrzeugverwaltung {
         }
     }
 
+    public List<Fahrzeug> sucheNachMarke(String marke){
+
+        List<Fahrzeug> gf = new ArrayList<Fahrzeug>();
+        for(Fahrzeug f : Fahrzeuge){
+            if(f.getMarke().equals(marke)){
+                gf.add(f);
+            }
+        }
+        return gf;
+    }
     
 
 }
