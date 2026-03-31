@@ -15,6 +15,4 @@ public class GemuseDecorator extends ReisDecorator{
     public double getPreis() {
         return super.reis.getPreis() + 1.5;
     }
-
-    
 }
