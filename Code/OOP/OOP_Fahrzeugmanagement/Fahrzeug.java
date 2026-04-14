@@ -18,4 +18,6 @@ public abstract class Fahrzeug {
         return s;
     }
 
+    public String getMarke(){return marke;}
+
 }
