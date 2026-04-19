@@ -1,0 +1,21 @@
+Übungsserie: OOP in Java
+Aufgabe 1: Bibliothekssystem
+Implementiere ein kleines Bibliothekssystem mit folgenden Klassen:
+
+Medium als abstrakte Klasse mit Feldern id, titel, jahr.
+
+Unterklassen Buch, DVD, EBook.
+
+Jedes Medium soll eine Methode printInfo() haben.
+
+EBook soll zusätzlich dateigröße besitzen.
+
+Verwende Vererbung, dynamische Bindung, abstrakte Klassen und Sichtbarkeit sinnvoll.
+
+Zusatz:
+
+Felder sollen möglichst private sein.
+
+Baue Getter ein, wo sinnvoll.
+
+Überschreibe toString() in allen Klassen.

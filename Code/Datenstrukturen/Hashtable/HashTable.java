@@ -29,7 +29,7 @@ public class HashTable {
     private int hash(String key) {
         int h = Math.abs(key.hashCode());
         return h % table.length;
-    }
+    }ch
 
     public void put(String key, int value) {
         int index = hash(key);
@@ -55,7 +55,7 @@ public class HashTable {
 
         while (current != null) {
             if (current.key.equals(key)) {
-                return; // schon vorhanden
+                return; // schon da
             }
             current = current.next;
         }
@@ -120,7 +120,7 @@ public class HashTable {
     }
 
     public void rehash() {
-        if(size < table.length * 0.75) {
+        if(size < table.length * 0.70) {
             return;
         }
 
