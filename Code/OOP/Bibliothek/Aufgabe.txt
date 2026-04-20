@@ -19,3 +19,33 @@ Felder sollen möglichst private sein.
 Baue Getter ein, wo sinnvoll.
 
 Überschreibe toString() in allen Klassen.
+
+
+Aufgabe 2: Vergleich und Sortierung
+Ergänze das Bibliothekssystem um Sortierung:
+
+Medium soll Comparable<Medium> implementieren und nach titel vergleichen.
+
+Schreibe zusätzlich einen Comparator<Medium> für Sortierung nach jahr.
+
+Sortiere eine Liste von Medien einmal nach Titel und einmal nach Jahr.
+
+Gib die Ergebnisse aus.
+
+Zusatz:
+
+Baue mindestens einen Test ein, bei dem zwei verschiedene Medien denselben Titel haben.
+
+Überlege, wie sich compareTo() und compare() unterscheiden.
+
+
+Aufgabe 3: Sammlung mit Iterator
+Verwende eine ArrayList<Medium> oder eine eigene Sammlung:
+
+Füge mehrere Medien ein.
+
+Gib alle Medien mit einem Iterator aus.
+
+Entferne alle Medien aus dem Jahr vor 2000.
+
+Nutze dabei einen sauberen Zugriff über Iterator und nicht direkt über Indizes.

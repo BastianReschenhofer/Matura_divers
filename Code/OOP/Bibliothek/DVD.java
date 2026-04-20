@@ -2,7 +2,7 @@ package Code.OOP.Bibliothek;
 
 public class DVD extends Medium{
 
-    public DVD(int id, String title, int jahr){
+    public DVD(int id, String title, int jahr) throws UngueltigesJahrExeption{
         super(id, title, jahr);
     }
     

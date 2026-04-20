@@ -4,7 +4,7 @@ public class EBook extends Medium{
     private String author;
     private int size;
 
-    public EBook(int id, String title, int jahr, String author, int size){
+    public EBook(int id, String title, int jahr, String author, int size) throws UngueltigesJahrExeption{
         super(id, title, jahr);
         this.author = author;
         this.size = size;
