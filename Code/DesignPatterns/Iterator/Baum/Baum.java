@@ -2,7 +2,7 @@ package Code.DesignPatterns.Iterator.Baum;
 
 import java.util.Iterator;
 
-public class Baum implements Iterable<Node> {
+public class Baum {
     public Node root;
     public Baum(Node root) {
         this.root = root;
@@ -94,9 +94,6 @@ public class Baum implements Iterable<Node> {
         return minValue;
     }
 
-    @Override
-    public Iterator<Node> iterator() {
-        return new InOrderIterator(root);
-    }
+
     
 }

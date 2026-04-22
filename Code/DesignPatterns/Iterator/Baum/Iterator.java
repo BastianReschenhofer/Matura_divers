@@ -1,6 +1,13 @@
 package Code.DesignPatterns.Iterator.Baum;
 
-public interface Iterator<T> {
+import Code.Handwerk.BspHandwerk1.Buch;
+
+public interface Iterator<T> extends java.util.Iterator<Buch> {
     boolean hasNext();
-    T next();
+    Buch next();
+
+    @Override
+    default void remove() {
+        java.util.Iterator.super.remove();
+    }
 } 

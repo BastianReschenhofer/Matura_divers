@@ -4,7 +4,7 @@ public class Suchen1 {
     
     public static void main(String[] args) {
         
-        public int[] x = {3, 7, 9, 11, 18, 25, 29, 34, 42, 50};
+        int[] x = {3, 7, 9, 11, 18, 25, 29, 34, 42, 50};
 
         System.out.println(searchSeq(1, x));
 

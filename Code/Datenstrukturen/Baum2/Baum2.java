@@ -1,7 +1,7 @@
 package Code.Datenstrukturen.Baum2;
 
 
-public class Baum2 {
+public class    Baum2 {
 
     private NodeBaum2<Integer> root;
 

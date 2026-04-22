@@ -29,7 +29,7 @@ public class HashTable {
     private int hash(String key) {
         int h = Math.abs(key.hashCode());
         return h % table.length;
-    }ch
+    }
 
     public void put(String key, int value) {
         int index = hash(key);
