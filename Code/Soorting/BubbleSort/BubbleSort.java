@@ -1,15 +1,19 @@
 package Code.Soorting.BubbleSort;
 
 public class BubbleSort {
-    public static void bubbleSort(int[] z , int lenght){
-        for(int i = 0; i < lenght-1; i++){
-            for(int j = i+1; j < lenght; j++){
-                if(z[i] > z[j]){
-                    int t = z[i];
-                    z[i] = z[j];
-                    z[j] = t;
+    public static void bubbleSort(int[] z) {
+        boolean swapt;
+        for (int i = 0; i < z.length - 1; i++) {
+            swapt = false;
+            for (int j = 0; j < z.length - 1 - i; j++) {
+                if (z[j] > z[j + 1]) {
+                    int t = z[j];
+                    z[j] = z[j + 1];
+                    z[j + 1] = t;
+                    swapt = true;
                 }
             }
+            if(!swapt) break;
         }
     }
 }
