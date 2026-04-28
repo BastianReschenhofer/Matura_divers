@@ -37,7 +37,7 @@ public class BuchSammlung implements Iterable<Buch> {
                 return index < anzahl;
             }
 
-            public Buch next(){
+            public Integer next(){
                 if(!hasNext()){
                     throw new NoSuchElementException();
                 }

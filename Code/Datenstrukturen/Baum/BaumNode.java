@@ -17,5 +17,9 @@ public class BaumNode {
     public void setLeft(BaumNode left){this.left = left;}
     public BaumNode getRight(){return right;}
     public void setRight(BaumNode right){this.right = right;}
+
+    public void accept(BaumVisitor visitor){
+        visitor.visit(this);
+    }
     
 }
