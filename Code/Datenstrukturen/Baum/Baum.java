@@ -2,7 +2,7 @@ package Code.Datenstrukturen.Baum;
 
 public class Baum {
     
-    private BaumNode root;
+    public BaumNode root;
 
     public void insert(int data){
         BaumNode newNode = new BaumNode(data);
@@ -67,11 +67,11 @@ public class Baum {
 
 
     public int count(){
-        return countRec(root, 0);
+        return countRec(root);
     }
-    private int countRec(BaumNode root, int count){
-        if(root == null) return count;
-        return countRec(root.getRight(), count++) + countRec(root.getLeft(), count++);
+    private int countRec(BaumNode root){
+        if(root == null) return 0;
+        return 1 + countRec(root.getRight()) + countRec(root.getLeft());
     }
 
 

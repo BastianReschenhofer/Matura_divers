@@ -4,7 +4,7 @@ import Code.Handwerk.BspHandwerk1.Buch;
 
 public interface Iterator<T> extends java.util.Iterator<Buch> {
     boolean hasNext();
-    Integer next();
+
 
     @Override
     default void remove() {

@@ -123,6 +123,7 @@ public class Graph2 <T>{
             System.out.println(dad.getValue() + " --- " + min + " ---> " + p.getValue());
 
             baum.add(p);
+            saum.remove(p);
         }
     }
 
