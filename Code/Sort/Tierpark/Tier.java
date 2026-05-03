@@ -1,5 +1,8 @@
 package Code.Sort.Tierpark;
 
+import jdk.jfr.Description;
+
+@Description("Penis")
 public class Tier implements Comparable<Tier>{
     private String name;
     final private String art;
