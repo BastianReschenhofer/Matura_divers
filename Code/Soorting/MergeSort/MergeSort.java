@@ -56,4 +56,51 @@ public class MergeSort {
         }
 
     }
+
+
+    public void mergeSorti(int[] array){
+        int n = array.length;
+        if(n<2)return;
+
+        int mid = n /2;
+        int[] links = new int[mid];
+        int[] rechts = new int[n-mid];
+
+        for(int i = 0; i < mid; i++){
+            links[i] = array[i];
+        }
+        for(int i = mid; i<n; i++){
+            rechts[i -mid] = array[i];
+        }
+
+        mergeSorti(links);
+        mergeSorti(rechts);
+
+        mergi(array, links, rechts);
+    }
+
+    private void mergi(int[] result, int[] links, int[] rechts){
+        int x = 0;
+        int y = 0;
+        int k = 0;
+
+        while(x < links.length && y < rechts.length){
+            if(links[x] <= rechts[y]){
+                result[k] = links[x];
+                k++; x++;
+            }else{
+                result[k] = rechts[y];
+                k++; y++;
+            }
+        }
+
+        while(x < links.length){
+            result[k] = links[x];
+            k++; x++;
+        }
+        while(y < rechts.length){
+            result[k] = rechts[y];
+            k++; y++;
+        }
+    }
 }
